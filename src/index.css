@@ -8,3 +8,7 @@
 #root{
     font-family: "Playfair Display", serif;
 }
+ul a.active{
+    color: #23BE0A;
+    border: 2px solid #23BE0A;
+}
