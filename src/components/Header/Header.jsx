@@ -36,7 +36,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl lg:text-3xl font-bold">Book Vibe</a>
+        <a className="btn btn-ghost text-xl lg:text-3xl font-extrabold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -50,10 +50,10 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="text-white bg-[#23BE0A] px-6 py-3 rounded-xl mr-6">
+        <button className="btn text-white bg-[#23BE0A] px-6 py-3 rounded-xl mr-6">
           Sign In
         </button>
-        <button className="text-white bg-[#59C6D2] px-6 py-3 rounded-xl">
+        <button className="btn text-white bg-[#59C6D2] px-6 py-3 rounded-xl">
           Sign Up
         </button>
       </div>

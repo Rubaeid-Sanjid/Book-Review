@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://i.ibb.co/qyn9rqt/IMG-8729.jpg",
+    "review": "A gripping psychological thriller that keeps you guessing until the very end.",
+    "totalPages": 336,
+    "rating": 4.2,
+    "category": "Mystery",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 2,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/YQSTqCv/The-Great-Gatsby-Cover-1925-Retouched.jpg",
+    "review": "A timeless classic that captures the essence of the Jazz Age.",
+    "totalPages": 180,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Classic", "Romance"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 3,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://i.ibb.co/vwwcFSQ/91-BHu7xj8e-L-AC-UF1000-1000-QL80.jpg",
+    "review": "A remarkable memoir of resilience and the power of education.",
+    "totalPages": 352,
+    "rating": 4.6,
+    "category": "Biography",
+    "tags": ["Memoir", "Inspiring"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://i.ibb.co/Bz70mht/img-20190505-155026-731.jpg",
+    "review": "A captivating tale of self-discovery and following one's dreams.",
+    "totalPages": 208,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Adventure", "Philosophical"],
+    "publisher": "HarperCollins",
+    "yearOfPublishing": 1988
+  },
+  {
+    "bookId": 5,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/gMDm3Cp/to-kill-mockingbird-0-6246f05d04644ae5ba1a02409d943a13.jpg",
+    "review": "A powerful story that addresses themes of racial injustice and morality.",
+    "totalPages": 324,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Classic", "Social Commentary"],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "image": "https://i.ibb.co/KNy4hy9/images.jpg",
+    "review": "A gripping thriller that keeps you on the edge of your seat.",
+    "totalPages": 336,
+    "rating": 4.1,
+    "category": "Mystery",
+    "tags": ["Suspense", "Domestic Thriller"],
+    "publisher": "Riverhead Books",
+    "yearOfPublishing": 2015
+  }
+]
