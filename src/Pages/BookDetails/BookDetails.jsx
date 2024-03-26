@@ -1,5 +1,7 @@
-
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBooks } from "../../Utility/localStorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
   const bookDetails = useLoaderData();
@@ -22,6 +24,15 @@ const BookDetails = () => {
     rating,
   } = currentBook;
 
+  const handleRead = () =>{
+    const checkBooks = saveBooks(currentBookId);
+    if(checkBooks){
+      toast("Already Exist");
+    }
+    else{
+      toast("Successfully added.")
+    }
+  }
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl mt-12">
       <figure className="">
@@ -70,10 +81,11 @@ const BookDetails = () => {
         </div>
         
         <div className="card-actions">
-          <button className="btn border-2 bg-transparent">Read</button>
+          <button onClick={handleRead} className="btn border-2 bg-transparent">Read</button>
           <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
