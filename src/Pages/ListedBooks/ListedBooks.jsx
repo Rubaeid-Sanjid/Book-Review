@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredBooks, getStoredWishBooks } from "../../Utility/localStorage";
 import ReadBook from "../../components/ReadBook/ReadBook";
 import WishlistBook from "../../components/WishlistBook/WishlistBook";
+import { IoIosArrowDown } from "react-icons/io";
 
 const ListedBooks = () => {
   const allBooks = useLoaderData();
@@ -31,7 +32,24 @@ const ListedBooks = () => {
         Books
       </h2>
 
-      <div role="tablist" className="tabs tabs-lifted mt-12">
+      <div className="text-center mt-8">
+      <details className="dropdown">
+        <summary className="m-1 btn bg-[#23BE0A] text-white">Sort By <IoIosArrowDown /></summary>
+        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+          <li>
+            <a>Rating</a>
+          </li>
+          <li>
+            <a>Number of pages</a>
+          </li>
+          <li>
+            <a>Published year</a>
+          </li>
+        </ul>
+      </details>
+      </div>
+
+      <div role="tablist" className="tabs tabs-lifted mt-8">
         <input
           type="radio"
           name="my_tabs_2"
