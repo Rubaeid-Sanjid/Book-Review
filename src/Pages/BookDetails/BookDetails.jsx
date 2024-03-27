@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBooks } from "../../Utility/localStorage";
+import { saveBooks, saveWishBooks } from "../../Utility/localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -27,12 +27,23 @@ const BookDetails = () => {
   const handleRead = () =>{
     const checkBooks = saveBooks(currentBookId);
     if(checkBooks){
-      toast("Already Exist");
+      toast("You have already added this book.");
     }
     else{
-      toast("Successfully added.")
+      toast("Book added to readlist.")
     }
   }
+  const handleWishRead = () =>{
+    const checkWishBooks = saveWishBooks(currentBookId);
+
+    if(checkWishBooks){
+      toast("You have already read this book. Can't add to wishlist");
+    }
+    else{
+      toast("Book added to Wishlist.")
+    }
+  }
+
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl mt-12">
       <figure className="">
@@ -82,7 +93,7 @@ const BookDetails = () => {
         
         <div className="card-actions">
           <button onClick={handleRead} className="btn border-2 bg-transparent">Read</button>
-          <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
+          <button onClick={handleWishRead} className="btn bg-[#50B1C9] text-white">Wishlist</button>
         </div>
       </div>
       <ToastContainer />
