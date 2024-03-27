@@ -1,4 +1,3 @@
-
 const getStoredBooks = () =>{
     const storedBooks = localStorage.getItem('readBookId');
     
@@ -33,7 +32,6 @@ const saveWishBooks = (currentBookId) => {
     const preStoredWishBooks = getStoredWishBooks();
     const savedReadBooks = getStoredBooks();
 
-    
     const isWishBookExist = preStoredWishBooks.find(WishbookID => WishbookID === currentBookId);
     
     if(!isWishBookExist){

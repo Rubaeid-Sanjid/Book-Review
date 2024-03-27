@@ -46,7 +46,7 @@ const BookDetails = () => {
 
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl mt-12">
-      <figure className="">
+      <figure>
         <img src={image} alt="book" className="w-1/2" />
       </figure>
       <div className="card-body">
