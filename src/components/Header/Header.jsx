@@ -26,7 +26,7 @@ const Header = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <NavLink to={"/home"}>Home</NavLink>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
               <NavLink to="/listedbooks">Listed Books</NavLink>
