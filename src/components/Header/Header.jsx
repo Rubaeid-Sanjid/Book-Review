@@ -26,13 +26,13 @@ const Header = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <NavLink to={"/"}>Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <NavLink to="/listedbooks">Listed Books</NavLink>
             </li>
             <li>
-              <NavLink to={"/readpages"}>Pages to Read</NavLink>
+              <NavLink to="/readpages">Pages to Read</NavLink>
             </li>
           </ul>
         </div>
@@ -40,7 +40,7 @@ const Header = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <NavLink className={"px-6 py-2 rounded-md text-lg"} to={"/home"}>
+          <NavLink className={"px-6 py-2 rounded-md text-lg"} to={"/"}>
             Home
           </NavLink>
 
