@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import image from "../../assets/images/Book.jpg"
 
 const Banner = () => {
   return (
     <div className="hero min-h-screen bg-base-200 rounded-3xl mt-6 lg:mt-12 p-6 lg:p-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
-          src="/src/assets/images/Book.jpg"
+          src={image}
           className="lg:max-w-sm rounded-lg shadow-2xl"
         />
         <div className="lg:w-1/2">
