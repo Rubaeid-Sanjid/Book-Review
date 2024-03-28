@@ -7,7 +7,6 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const ListedBooks = () => {
   const allBooks = useLoaderData();
-  // const {totalPages, rating, yearOfPublishing} = allBooks
 
   const [readBooks, setReadBooks] = useState([]);
   const [wishlistBooks, setWishlistBooks] = useState([]);

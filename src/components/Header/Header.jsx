@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 mt-8">
+    <div className="navbar items-start lg:items-center bg-base-100 mt-4 lg:mt-8 flex-col lg:flex-row">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl lg:text-3xl font-extrabold">Book Vibe</a>
+        <a className="btn btn-ghost text-2xl lg:text-3xl font-extrabold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -49,7 +49,7 @@ const Header = () => {
           <NavLink className={"px-6 py-2 rounded-md text-lg"} to={"/readpages"}>Pages to Read</NavLink>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="lg:navbar-end ml-8 lg:ml-0">
         <button className="btn text-white bg-[#23BE0A] px-6 py-3 rounded-xl mr-6">
           Sign In
         </button>
