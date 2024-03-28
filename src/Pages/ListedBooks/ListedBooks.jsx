@@ -7,6 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const ListedBooks = () => {
   const allBooks = useLoaderData();
+  // const {totalPages, rating, yearOfPublishing} = allBooks
 
   const [readBooks, setReadBooks] = useState([]);
   const [wishlistBooks, setWishlistBooks] = useState([]);
@@ -26,6 +27,44 @@ const ListedBooks = () => {
     setWishlistBooks(storedWishlistBooks);
   }, [allBooks]);
 
+//Read book list sort 
+  const handleSortReadBookByRating = () => {
+    const sortedAllBooks = allBooks.sort(
+      (a, b) => b.rating - a.rating
+    );
+
+    const readYears = readBooks.map((book) => book.rating);
+
+    const sortedBook = sortedAllBooks.filter((book) =>
+      readYears.includes(book.rating)
+    );
+    setReadBooks(sortedBook);
+  };
+  const handleSortReadBookByPage = () => {
+    const sortedAllBooks = allBooks.sort(
+      (a, b) => b.totalPages - a.totalPages
+    );
+
+    const readYears = readBooks.map((book) => book.totalPages);
+
+    const sortedBook = sortedAllBooks.filter((book) =>
+      readYears.includes(book.totalPages)
+    );
+    setReadBooks(sortedBook);
+  };
+  const handleSortReadBookByYear = () => {
+    const sortedAllBooks = allBooks.sort(
+      (a, b) => b.yearOfPublishing - a.yearOfPublishing
+    );
+
+    const readYears = readBooks.map((book) => book.yearOfPublishing);
+
+    const sortedBook = sortedAllBooks.filter((book) =>
+      readYears.includes(book.yearOfPublishing)
+    );
+    setReadBooks(sortedBook);
+  };
+
   return (
     <div>
       <h2 className="text-4xl font-bold text-center mt-10 p-10 bg-[#1313130D] rounded-xl">
@@ -33,20 +72,22 @@ const ListedBooks = () => {
       </h2>
 
       <div className="text-center mt-8">
-      <details className="dropdown">
-        <summary className="m-1 btn bg-[#23BE0A] text-white">Sort By <IoIosArrowDown /></summary>
-        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-          <li>
-            <a>Rating</a>
-          </li>
-          <li>
-            <a>Number of pages</a>
-          </li>
-          <li>
-            <a>Published year</a>
-          </li>
-        </ul>
-      </details>
+        <details className="dropdown">
+          <summary className="m-1 btn bg-[#23BE0A] text-white">
+            Sort By <IoIosArrowDown />
+          </summary>
+          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+            <li>
+              <a onClick={handleSortReadBookByRating}>Rating</a>
+            </li>
+            <li>
+              <a onClick={handleSortReadBookByPage}>Number of pages</a>
+            </li>
+            <li>
+              <a onClick={handleSortReadBookByYear}>Published year</a>
+            </li>
+          </ul>
+        </details>
       </div>
 
       <div role="tablist" className="tabs tabs-lifted mt-8">

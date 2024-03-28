@@ -1,6 +1,16 @@
-# React + Vite
+# Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Site: 
+
+Features and Characteristics
+* Routing through navbar menu.
+* Add books to read book list.
+* Add books to wishlist.
+* View the list.
+* Shows the bar chart of added read-list book's name against read-listed
+books totalPages.
+* Sorting feature of added book's list.
+
 
 Currently, two official plugins are available:
 
