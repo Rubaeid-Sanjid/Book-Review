@@ -1,6 +1,6 @@
 # Book Vibe
 
-Live Site: 
+Live Site: https://b9a8-book-vibe-rubaeid-sanjid.netlify.app/
 
 Features and Characteristics
 * Routing through navbar menu.
